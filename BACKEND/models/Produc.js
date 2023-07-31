@@ -12,6 +12,11 @@ const productSchema = Schema({
       required: true,
       trim: true,
     },
+    precio: {
+        type: String,
+        required: true,
+        trim: true,
+      },
     descripcion: {
       type: String,
       required: true,

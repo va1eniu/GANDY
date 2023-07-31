@@ -1,4 +1,5 @@
 const urlGet = "http://localhost:1000/micro";
+const urlPro = "http://localhost:1000/productos";
 
 export async function getMicro() {
   try {
@@ -14,16 +15,16 @@ export async function getMicro() {
   }
 }
 
-const urlPro = "http://localhost:1000/productos";
-
 export async function getProductos() {
   try {
     const response = await fetch(urlPro);
     if (!response.ok) {
       throw new Error('Error al obtener los datos de la API');
     }
-    const data = await response.json();
-    return data;
+    const primerosTresElementos = data.splice(0, 3);
+
+    return primerosTresElementos;
+    
   } catch (error) {
     console.error(error);
     return []; 
