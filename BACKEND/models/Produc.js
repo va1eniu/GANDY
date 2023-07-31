@@ -1,7 +1,7 @@
 import { Schema, model } from "mongoose";
 
 
-const microSchema = Schema({
+const productSchema = Schema({
     nombre: {
       type: String,
       required: [true, "El campo de nombre es requerido"],
@@ -23,6 +23,6 @@ const microSchema = Schema({
     }
   });
   
-  const Micro = model("microempresas", microSchema);
+  const Produc = model("productos", productSchema);
   
-  export default Micro;
+  export default Produc;

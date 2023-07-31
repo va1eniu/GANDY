@@ -1,6 +1,6 @@
-const urlGet = "http://localhost:1000/micro";
+const urlGet = "http://localhost:1000/productos";
 
-export async function getMicro() {
+export async function getProductos() {
   try {
     const response = await fetch(urlGet);
     if (!response.ok) {
@@ -13,4 +13,3 @@ export async function getMicro() {
     return []; 
   }
 }
-

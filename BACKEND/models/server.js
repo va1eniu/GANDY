@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import conectarDB from "../database/config.js";
 import RouterMicro from "../routes/micro.routes.js";
+import RouterProduct from "../routes/product.routes.js";
 
 
 class Server {
@@ -11,6 +12,7 @@ class Server {
     this.middlewares();
     this.connect();
     this.microPath = "/micro"
+    this.produPath = "/productos"
     this.routes();
 
  
@@ -25,6 +27,7 @@ class Server {
 
   routes(){
     this.app.use(this.microPath, RouterMicro)
+    this.app.use(this.produPath, RouterProduct)
   }
  
   listen() {
