@@ -3,6 +3,7 @@ import cors from "cors";
 import conectarDB from "../database/config.js";
 import RouterMicro from "../routes/micro.routes.js";
 import RouterProduct from "../routes/product.routes.js";
+import RouterDona from "../routes/dona.routes.js";
 
 
 class Server {
@@ -13,6 +14,7 @@ class Server {
     this.connect();
     this.microPath = "/micro"
     this.produPath = "/productos"
+    this.donaPath = "/donaciones"
     this.routes();
 
  
@@ -28,6 +30,7 @@ class Server {
   routes(){
     this.app.use(this.microPath, RouterMicro)
     this.app.use(this.produPath, RouterProduct)
+    this.app.use(this.donaPath, RouterDona)
   }
  
   listen() {

@@ -6,16 +6,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="apple-touch-icon" href="../gandyExpresions/feliz.png">
-    <link rel="shortcut icon" type="image/x-icon" href="../gandyExpresions/feliz.png">
-<link rel="stylesheet" href="../index.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/templatemo.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="apple-touch-icon" href="../../gandyExpresions/feliz.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../../gandyExpresions/feliz.png">
+<link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/templatemo.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+
+    <script type="module" src="./index.js"></script>
 
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome.min.css">
 
     <!-- Load map styles -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
@@ -35,7 +37,7 @@ https://templatemo.com/tm-559-zay-shop
     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
-            <img src="../gandyExpresions/normal.png" height="60" width="70" alt="">
+            <img src="../../gandyExpresions/normal.png" height="60" width="70" alt="">
             <a class="navbar-brand text-success logo h1 align-self-center" href="../pages/home.html ">
                 Gandy 
             </a>
@@ -91,19 +93,22 @@ https://templatemo.com/tm-559-zay-shop
 
     <main>
    
-        <h2>Donaciones</h2>
+        <h1 class=" text-success text-center"> Tus donaciones</h1>
         <section class="modalito">
           <center>
-          <button
+            <div class="boton">
+            <button
             id="btnCrearCategoria"
             type="button"
-            class="btn btn-success tamano"
+            class="btn btn-success "
             data-bs-toggle="modal"
             data-bs-target="#modalCategoria"
             data-bs-whatever="@getbootstrap"
           >
            Nueva Donacion
           </button>
+          
+        </div>
           
         </center>
     
@@ -134,11 +139,11 @@ https://templatemo.com/tm-559-zay-shop
                   </div>
                   <div class="mb-3">
                     <label for="CategoriaNombre" class="col-form-label text-white">fundacion:</label>
-                    <input type="text" class="form-control formTam" id="nombre" />
+                    <input type="text" class="form-control formTam" id="fundacion" />
                   </div>
                   <div class="mb-3">
                     <label for="CategoriaNombre" class="col-form-label text-white">cantidad a donar:</label>
-                    <input type="text" class="form-control formTam" id="nombre" />
+                    <input type="text" class="form-control formTam" id="cantidad" />
                   </div>
                  
             
@@ -165,57 +170,89 @@ https://templatemo.com/tm-559-zay-shop
     
     <!-- Modal -->
     <div class="modal fade" id="staticBackdropEDIT" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title fs-5 " id="staticBackdropLabel">Editar accion</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-5" id="staticBackdropLabel">EDITAR</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form id="formularioEdit" class="form-select-lg mb-3" method="POST">
+                 
+                <div class="mb-3">
+                  <label for="CategoriaNombre2" class="col-form-label">editar nombre:</label>
+                  <input type="text" class="form-control formTam" id="nombre2" />
+                </div>
+
+                <div class="mb-3">
+                    <label for="CategoriaNombre2" class="col-form-label">editar fundacion:</label>
+                    <input type="text" class="form-control formTam" id="nombre3" />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="CategoriaNombre2" class="col-form-label">cantidad:</label>
+                    <input type="text" class="form-control formTam" id="nombre4" />
+                  </div>
+      
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary btn-lg"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="submit" class="btn btn-primary btn-lg">Guardar</button>
+            </div>
+          </form>
+            </div>
+            
           </div>
-          <div class="modal-body">
-            <form id="formularioEdit" class="form-select-lg mb-3" method="POST">
-               
-              <div class="mb-3">
-                <label for="CategoriaNombre2" class="col-form-label">editar accion:</label>
-                <input type="text" class="form-control formTam" id="nombre2" />
-              </div>
-    
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary btn-lg"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="submit" class="btn btn-primary btn-lg">Guardar</button>
-          </div>
-        </form>
-          </div>
-          
         </div>
-      </div>
-    </div> 
+      </div> 
+      
+        
     
       
-        <table id="tabla-categorias">
-          <thead>
-            <tr>
+    <table id="tabla-categorias">
+      <thead>
+          <tr>
               <th>#</th>
               <th>A nombre de:</th>
               <th>Fundacion</th>
               <th>Cantidad</th>
               <th>delete</th>
               <th>editar</th>
-            </tr>
-          </thead>
-          <tbody id="insert">
-            
-            
-    
-          </tbody>
-        </table>
-      </main>
+          </tr>
+      </thead>
+      <tbody id="insert">
+      </tbody>
+  </table>
+
+  <style>
+   
+#total-donado {
+    display: flex;
+    justify-content: center;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #f7f7f7;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+#suma-total {
+  font-weight: bold;
+  color: #29b762
+}
+  </style>
+
+  <div id="total-donado">Total Donado: <span id="suma-total"></span></div>
+  
 
 
     <!-- Start Footer -->
@@ -334,11 +371,11 @@ https://templatemo.com/tm-559-zay-shop
     <!-- End Footer -->
 
     <!-- Start Script -->
-    <script src="assets/js/jquery-1.11.0.min.js"></script>
-    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/templatemo.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <script src="../assets/js/jquery-1.11.0.min.js"></script>
+    <script src="../assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/templatemo.js"></script>
+    <script src="../assets/js/custom.js"></script>
     <!-- End Script -->
 </body>
 

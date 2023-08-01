@@ -150,8 +150,8 @@ async function productos() {
         cardContainer.innerHTML = '';
 
         // Obtiene solo los primeros tres elementos de datos
-        const primerosTresElementos = datos.splice(0, 3);
-        
+        const primerosTresElementos = datos.slice(0, 3);
+
         primerosTresElementos.forEach((element, index) => {
             const { imagen, nombre, descripcion, categoria } = element;
             const card = document.createElement("div");

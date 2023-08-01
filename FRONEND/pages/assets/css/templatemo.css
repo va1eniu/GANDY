@@ -30,6 +30,7 @@ Table of contents
 
 /* Typography */
 body, ul, li, p, a, label, input, div {
+
   font-family: 'Roboto', sans-serif;
   font-size: 18px !important;
   font-weight: 300 !important;
@@ -55,9 +56,9 @@ body, ul, li, p, a, label, input, div {
 .text-success { color: #59ab6e !important;}
 .text-light { color: #cfd6e1 !important;}
 .bg-dark { background-color: #212934 !important;}
-.bg-light { background-color: #e9eef5 !important;}
+.bg-light { background-color: #ffffff !important;}
 .bg-black { background-color: #1d242d !important;}
-.bg-success { background-color: #59ab6e !important;}
+.bg-success { background-color: #37822f !important;}
 .btn-success {
   background-color: #59ab6e !important;
   border-color: #56ae6c !important;
@@ -83,7 +84,7 @@ body, ul, li, p, a, label, input, div {
 .shop-top-menu a:hover { color: #69bb7e !important;}
 /* Product */
 .product-wap { box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10);}
-.product-wap .product-color-dot.color-dot-red { background:#f71515;}
+.product-wap .product-color-dot.color-dot-red { background:#55f715;}
 .product-wap .product-color-dot.color-dot-blue { background:#6db4fe;}
 .product-wap .product-color-dot.color-dot-black { background:#000000;}
 .product-wap .product-color-dot.color-dot-light { background:#e0e0e0;}

@@ -2,7 +2,7 @@
   /* Estilos específicos para cada subpágina */
   
   /* Estilos para la página "Categorías" */
-h2{
+h1{
   color: #3ea732;
 }
 
@@ -28,7 +28,9 @@ h2{
   }
   
 
-
+.boton{
+  padding-bottom: 1rem;
+}
   
  
   

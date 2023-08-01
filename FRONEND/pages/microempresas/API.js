@@ -21,13 +21,14 @@ export async function getProductos() {
     if (!response.ok) {
       throw new Error('Error al obtener los datos de la API');
     }
-    const primerosTresElementos = data.splice(0, 3);
-
+    const data = await response.json();
+    const primerosTresElementos = data.slice(0, 3); // Obtener solo los tres primeros elementos
     return primerosTresElementos;
-    
   } catch (error) {
     console.error(error);
-    return []; 
+    return [];
   }
 }
+
+
 
