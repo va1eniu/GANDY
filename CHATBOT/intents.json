@@ -1,0 +1,324 @@
+{
+    "intents": [
+        {
+            "tag": "saludo",
+            "patterns": ["holaa", "que tal", "como estas", "saludos"],   
+            "responses": ["Hola mi nombre es Gandy, ¿En qué te puedo ayudar?", "Buenos días, soy Gandy. ¿En qué puedo ayudarte?", "¡Hola! Soy Gandy, ¿Cómo estás?", "Hola, soy Gandy. Estoy aquí para ayudarte con consejos saludables y sostenibles. ¿En qué puedo asistirte?", "¡HOLA! Soy GANDY, ¿En qué puedo colaborarte?"]
+        },
+        {
+            "tag": "nombre",
+            "patterns": ["como es tu nombre", "como te llamas"],
+            "responses": ["Me llamo Gandy", "Mi nombre es Gandy"]
+        },
+        {
+            "tag": "guia",
+            "patterns": ["que me aconsejas comprar en esta pagina","que puedo pedir", "que puedo comprar sostenible", "cuales son las recomendaciones de hoy"],
+            "responses": ["Aconsejo que si buscas algo en específico saludable o sostenible, te dirijas al apartado de productos en la parte superior de la página", "Las recomendaciones son la microempresa Juanita S.A.S, boticaria la 60", "Te recomiendo comprar las nuevas promociones y comidas saludables que tenemos en la página principal"]
+        },
+        {
+            "tag": "donaciones",
+            "patterns": ["para que es la página de donaciones", "que puedo hacer en la página de donaciones", "como funcionan las donaciones"],
+            "responses": ["Por cada compra en Gandy y su uso, se donará cierta cantidad de dinero a una fundación que ayude al medio ambiente (esto dependerá de tu uso en Gandy)."]
+        },
+        {
+            "tag": "saludables",
+            "patterns": ["¿Qué alimentos son saludables?", "Dame consejos para comer bien", "¿Cómo llevar una dieta sana?", "Cuáles son los alimentos más nutritivos?", "¿Qué debo evitar en mi dieta?"],
+            "responses": ["Una dieta saludable debe incluir una variedad de frutas y verduras frescas, granos integrales, proteínas magras como el pescado y el pollo, y grasas saludables como las que se encuentran en aguacates y nueces.", 
+            "Recuerda beber suficiente agua durante el día para mantenerte hidratado. Evita los alimentos procesados y ricos en grasas saturadas o azúcares agregados.", 
+            "Un consejo para llevar una dieta sana es planificar tus comidas con anticipación y evitar el exceso de azúcares y alimentos poco nutritivos.", 
+            "Entre los alimentos más nutritivos se encuentran las espinacas, el salmón, las nueces, el brócoli y las bayas. Estos son ricos en vitaminas, minerales y antioxidantes.", 
+            "Debes evitar el consumo excesivo de bebidas azucaradas, comida rápida, productos altamente procesados y ricos en grasas trans."]
+        },
+        {
+            "tag": "ejercicio",
+            "patterns": ["¿Cuál es la importancia del ejercicio?", "¿Qué tipo de ejercicios son buenos?", "Dame consejos para mantenerme activo.", "¿Cuánto tiempo debo hacer ejercicio al día?", "¿Es necesario ir al gimnasio para mantenerme en forma?"],
+            "responses": ["El ejercicio regular es esencial para mantener una buena salud física y mental. Ayuda a fortalecer los músculos, mejorar la circulación y mantener un peso saludable.", 
+            "Los ejercicios aeróbicos como correr, nadar o andar en bicicleta son excelentes para mejorar la resistencia cardiovascular. Los ejercicios de fuerza, como levantar pesas o hacer ejercicios con el propio peso corporal, ayudan a fortalecer los músculos y los huesos.", 
+            "Una forma de mantenerse activo es encontrar una actividad que te guste, como bailar, practicar yoga o salir a caminar. También puedes incorporar pequeños cambios en tu rutina diaria, como subir escaleras en lugar de usar el ascensor o dar paseos cortos después de las comidas.", 
+            "Se recomienda hacer al menos 30 minutos de ejercicio moderado la mayoría de los días de la semana. Puedes dividirlo en sesiones más cortas a lo largo del día si es necesario.", 
+            "No es necesario ir al gimnasio para mantenerse en forma. Hay muchas actividades físicas que puedes hacer en casa, como entrenamiento con el peso corporal, ejercicios de yoga, baile, entre otros."]
+        },
+        {
+            "tag": "sostenible",
+            "patterns": ["¿Qué es el estilo de vida sostenible?", "Dame consejos para vivir de forma sostenible", "¿Cómo puedo ser más ecológico?", "¿Qué puedo hacer para reducir mi huella de carbono?", "Consejos para un hogar más sostenible"],
+            "responses": ["El estilo de vida sostenible es aquel que busca reducir el impacto negativo en el medio ambiente, promoviendo prácticas que conserven los recursos naturales para las generaciones futuras.", 
+            "Algunos consejos para vivir de forma sostenible incluyen reciclar y reutilizar materiales siempre que sea posible, reducir el consumo de energía apagando los electrodomésticos y luces cuando no se necesiten, usar transporte público o bicicleta en lugar de automóvil, y preferir productos locales y de temporada para reducir la huella de carbono.", 
+            "También puedes ahorrar agua cerrando el grifo mientras te lavas los dientes o tomas duchas más cortas, y reducir el uso de plásticos desechables llevando tu propia botella de agua reutilizable y bolsas de tela para las compras.", 
+            "Para reducir tu huella de carbono, considera utilizar más transporte público, optar por energías renovables en tu hogar y reducir el consumo de carne.", 
+            "En tu hogar, puedes hacerlo más sostenible al usar bombillas LED, instalar paneles solares, usar electrodomésticos de bajo consumo energético y tener un sistema de reciclaje efectivo."]
+        },
+        {
+            "tag": "descanso",
+            "patterns": ["¿Por qué es importante el descanso?", "¿Cuántas horas de sueño necesito?", "Dame consejos para mejorar mi calidad de sueño.", "¿Cómo puedo dormir mejor?", "Consejos para un buen descanso"],
+            "responses": ["El descanso es esencial para permitir que nuestro cuerpo y mente se recuperen y rejuvenezcan. Durante el sueño, nuestro cuerpo realiza procesos de reparación y consolidación de la memoria.", 
+            "La cantidad de sueño necesaria puede variar según la edad y el individuo, pero en general, los adultos deberían apuntar a dormir entre 7 y 9 horas por noche.", 
+            "Para mejorar la calidad de tu sueño, establece una rutina regular de horarios para acostarte y levantarte, crea un ambiente tranquilo y oscuro en tu dormitorio, evita el uso de dispositivos electrónicos antes de dormir, y limita el consumo de cafeína y comidas pesadas antes de acostarte.", 
+            "Para dormir mejor, procura mantener una temperatura fresca en tu habitación, utiliza ropa de cama cómoda, y evita el consumo de alimentos pesados o bebidas estimulantes antes de dormir.", 
+            "El descanso es crucial para mantener una mente clara y un cuerpo saludable. Intenta desconectar de las pantallas electrónicas al menos una hora antes de acostarte y crea un ambiente tranquilo y relajante en tu dormitorio para facilitar el sueño."]
+        },
+        {
+            "tag": "meditacion",
+            "patterns": ["¿Cuáles son los beneficios de la meditación?", "¿Cómo puedo empezar a meditar?", "Dame consejos para meditar correctamente.", "¿Es la meditación adecuada para todos?", "¿Cuál es el mejor momento para meditar?"],
+            "responses": ["La meditación tiene numerosos beneficios, como reducir el estrés y la ansiedad, mejorar la concentración, fomentar la autoconciencia y promover una sensación de calma y bienestar.", 
+            "Para empezar a meditar, busca un lugar tranquilo y sin distracciones donde puedas sentarte o acostarte cómodamente. Concéntrate en tu respiración o repite un mantra para mantener tu mente enfocada.", 
+            "Es normal que tu mente se distraiga durante la meditación. Cuando esto suceda, simplemente vuelve tu atención a la respiración o al mantra sin juzgarte a ti mismo. Empieza con sesiones cortas y aumenta gradualmente el tiempo a medida que te sientas más cómodo.", 
+            "La meditación puede ser beneficiosa para la mayoría de las personas, pero puede que no sea adecuada para aquellos que padecen ciertos trastornos mentales o problemas de salud. Siempre es recomendable consultar con un profesional de la salud antes de comenzar cualquier práctica nueva.", 
+            "El mejor momento para meditar puede variar según tus preferencias y horarios. Algunas personas encuentran que meditar por la mañana les ayuda a comenzar el día con calma y claridad, mientras que otros prefieren hacerlo antes de dormir para relajarse y conciliar el sueño más fácilmente."]
+        },
+        {
+            "tag": "ayudar-planeta",
+            "patterns": ["¿Cómo puedo ayudar al planeta?", "¿Qué acciones puedo tomar para ser más eco-friendly?", "Dame consejos para ser más sostenible con el medio ambiente.", "¿Cuál es el impacto de reciclar?", "¿Cómo puedo reducir el uso de plástico?"],
+            "responses": ["Puedes ayudar al planeta adoptando hábitos sostenibles, como reciclar y reutilizar materiales siempre que sea posible, ahorrar energía y agua, usar transporte público o bicicleta, y preferir productos locales y de temporada.", 
+            "Para ser más eco-friendly, considera reducir el consumo de productos desechables, apagar las luces y desconectar los electrodomésticos cuando no los estés utilizando, utilizar bolsas reutilizables para las compras y optar por productos con envases reciclables.", 
+            "Reciclar es importante porque ayuda a reducir la cantidad de desechos que terminan en vertederos, ahorrando recursos naturales y reduciendo la contaminación.", 
+            "Para reducir el uso de plástico, evita comprar productos con envases de plástico innecesarios, lleva tu propia botella de agua reutilizable, y utiliza bolsas de tela para las compras en lugar de bolsas plásticas.", 
+            "Cada pequeña acción cuenta. Si todos contribuimos haciendo cambios sostenibles en nuestras vidas, podemos tener un gran impacto positivo en el medio ambiente."]
+        },
+        {
+            "tag": "chatbot-consejos",
+            "patterns": ["¿Cómo funciona este chatbot de consejos saludables y sostenibles?", "¿Puedes darme un ejemplo de cómo este chatbot me brinda consejos?", "¿Qué tipo de consejos puedo obtener de este chatbot?", "¿Cómo se generan las respuestas del chatbot?"],
+            "responses": ["Este chatbot está diseñado para brindarte consejos y recomendaciones relacionados con la salud y la sostenibilidad.", 
+            "Por ejemplo, si preguntas sobre consejos para una dieta saludable, el chatbot podría sugerirte incluir más frutas y verduras en tu alimentación diaria.", 
+            "Puedes obtener consejos sobre nutrición, ejercicio, bienestar emocional, prácticas sostenibles y mucho más.", 
+            "Las respuestas del chatbot se generan mediante un algoritmo que analiza las preguntas que recibimos y busca las respuestas más adecuadas en una base de conocimientos previamente establecida."]
+        },
+        {
+            "tag": "carrito-compras",
+            "patterns": ["¿Qué podemos visualizar en un carrito de compras?", "¿Cómo puedo agregar productos al carrito?", "¿Cuál es el proceso de pago en la plataforma?", "¿Cómo puedo revisar mi historial de compras?", "¿Cómo funciona el sistema de entrega de productos?"],
+            "responses": ["En un carrito de compras, puedes visualizar todos los productos que has seleccionado para comprar en nuestra plataforma.", 
+            "Para agregar productos al carrito, simplemente navega por nuestra página de productos, selecciona los artículos que desees y haz clic en el botón 'Agregar al carrito'.", 
+            "El proceso de pago en nuestra plataforma es seguro y sencillo. Una vez que hayas agregado los productos al carrito, simplemente sigue las instrucciones para ingresar tus datos de pago y dirección de entrega.", 
+            "Puedes revisar tu historial de compras iniciando sesión en tu cuenta y accediendo a la sección 'Historial de compras'. Allí encontrarás un registro de todas tus compras anteriores.", 
+            "Nuestro sistema de entrega de productos está diseñado para ser eficiente y confiable. Una vez que hayas realizado tu compra, recibirás información sobre el estado de entrega y una estimación del tiempo de llegada de tus productos."]
+        },
+        {
+            "tag": "consejos-casa",
+            "patterns": ["¿Qué consejos sostenibles puedo aplicar en mi hogar?", "¿Cómo puedo hacer mi casa más eco-friendly?", "Dame ideas para reducir el consumo de energía en casa.", "Consejos para tener un jardín sostenible.", "¿Qué productos de limpieza son más amigables con el medio ambiente?"],
+            "responses": ["Puedes aplicar varios consejos sostenibles en tu hogar, como instalar paneles solares para reducir el consumo de energía, utilizar bombillas LED de bajo consumo, reciclar y reutilizar materiales, y reducir el uso de plásticos desechables.", 
+            "Para hacer tu casa más eco-friendly, considera usar pinturas y materiales ecológicos, instalar sistemas de captación de agua de lluvia, y mantener un jardín con plantas nativas y resistentes a la sequía.", 
+            "Para reducir el consumo de energía en casa, apaga las luces y desconecta los electrodomésticos cuando no los utilices, utiliza cortinas o persianas para mantener la temperatura adecuada en tu hogar, y evita abrir la nevera innecesariamente.", 
+            "Si tienes un jardín, puedes hacerlo más sostenible utilizando técnicas de compostaje, recogiendo el agua de lluvia para regar las plantas, y eligiendo plantas autóctonas que requieran menos agua y cuidados.", 
+            "Para una limpieza más amigable con el medio ambiente, puedes optar por productos de limpieza biodegradables o hacer tus propios limpiadores naturales usando ingredientes como vinagre, bicarbonato de sodio y limón."]
+        },
+        {
+            "tag": "vida-saludable",
+            "patterns": ["¿Cómo llevar una vida más saludable?", "Dame consejos para mejorar mi bienestar general.", "¿Qué hábitos puedo adoptar para ser más saludable?", "Consejos para tener una mente positiva y feliz.", "¿Cómo mejorar mi salud mental?"],
+            "responses": ["Para llevar una vida más saludable, es importante mantener una dieta equilibrada, hacer ejercicio regularmente, dormir lo suficiente, y gestionar el estrés adecuadamente.", 
+            "Para mejorar tu bienestar general, practica la gratitud, mantén relaciones sociales saludables, y dedica tiempo a actividades que disfrutes y te hagan sentir bien.", 
+            "Puedes adoptar hábitos saludables, como meditar, mantener una rutina de ejercicio, evitar fumar y consumir alcohol en exceso, y cuidar tu higiene personal.", 
+            "Para tener una mente positiva y feliz, enfócate en pensamientos positivos, aprende a manejar el estrés, y busca apoyo cuando lo necesites.", 
+            "Si deseas mejorar tu salud mental, considera hablar con un profesional de la salud mental, practicar técnicas de relajación, y rodearte de personas que te apoyen y te hagan sentir bien."]
+        },
+        {
+            "tag": "alimentacion-sostenible",
+            "patterns": ["¿Qué es la alimentación sostenible?", "Dame consejos para tener una dieta más ecológica.", "¿Cómo puedo reducir el desperdicio de alimentos?", "Consejos para comprar alimentos locales y de temporada.", "¿Qué beneficios tiene consumir alimentos orgánicos?"],
+            "responses": ["La alimentación sostenible se basa en elegir alimentos que tengan un menor impacto ambiental, como productos locales y de temporada, reducir el consumo de carne y priorizar opciones orgánicas.", 
+            "Para tener una dieta más ecológica, incorpora más frutas, verduras y legumbres en tus comidas, limita el consumo de carne roja y opta por fuentes de proteína más sostenibles, como pescado o tofu.", 
+            "Para reducir el desperdicio de alimentos, planifica tus comidas con anticipación, almacena adecuadamente los alimentos para prolongar su frescura y utiliza restos de alimentos para hacer nuevas recetas.", 
+            "Comprar alimentos locales y de temporada reduce la huella de carbono al evitar largos transportes y apoyar a los productores locales. Además, los alimentos de temporada suelen ser más frescos y nutritivos.", 
+            "Los alimentos orgánicos se cultivan sin el uso de pesticidas y productos químicos sintéticos, lo que puede beneficiar tanto al medio ambiente como a la salud al reducir la exposición a sustancias tóxicas."]
+        },
+        {
+            "tag": "ejemplos-sostenibles",
+            "patterns": ["Dame ejemplos de acciones sostenibles en el día a día.", "¿Qué puedo hacer para vivir de manera más ecológica?", "Consejos para ser más sostenible en el trabajo.", "¿Cómo puedo ahorrar energía en casa?", "Ideas para reducir el consumo de agua."],
+            "responses": ["Algunos ejemplos de acciones sostenibles en el día a día incluyen utilizar transporte público o bicicleta en lugar del automóvil, reducir el consumo de productos desechables, reciclar materiales y ahorrar energía apagando los dispositivos electrónicos.", 
+            "Para vivir de manera más ecológica, considera reducir el consumo de carne, utilizar bolsas reutilizables para las compras, comprar productos de segunda mano y apagar las luces cuando no se necesiten.", 
+            "En el trabajo, puedes fomentar prácticas sostenibles, como utilizar menos papel, reciclar materiales, apagar las luces al salir de una habitación y utilizar equipo energéticamente eficiente.", 
+            "Para ahorrar energía en casa, usa bombillas LED, ajusta la temperatura del termostato, apaga los electrodomésticos en modo stand-by y utiliza el lavavajillas y la lavadora con carga completa.", 
+            "Para reducir el consumo de agua, repara fugas en grifos y tuberías, utiliza un cubo para regar las plantas en lugar de la manguera y toma duchas más cortas."]
+        },
+        {
+            "tag": "beneficios-naturaleza",
+            "patterns": ["¿Cuáles son los beneficios de pasar tiempo en la naturaleza?", "Dame consejos para conectarme más con la naturaleza.", "¿Cómo influye la naturaleza en mi bienestar?", "Consejos para practicar senderismo de forma responsable.", "¿Por qué es importante preservar los espacios naturales?"],
+            "responses": ["Pasar tiempo en la naturaleza tiene múltiples beneficios, como reducir el estrés, mejorar el estado de ánimo, aumentar la creatividad y fomentar la conexión con el entorno.", 
+            "Para conectarte más con la naturaleza, dedica tiempo para caminar al aire libre, practicar actividades como el yoga al aire libre o simplemente sentarte en un parque para observar la naturaleza.", 
+            "La naturaleza influye positivamente en el bienestar emocional y mental al brindar una sensación de calma y tranquilidad, reducir la ansiedad y mejorar la salud general.", 
+            "Cuando practiques senderismo, asegúrate de seguir las normas y regulaciones del área, no dejar basura, respetar la flora y fauna, y mantenerse en los senderos marcados para evitar dañar el entorno.", 
+            "Es importante preservar los espacios naturales para proteger la biodiversidad, mantener los ecosistemas saludables, y garantizar que las futuras generaciones puedan disfrutar de la belleza y los recursos naturales del planeta."]
+        },
+        {
+            "tag": "consumo-responsable",
+            "patterns": ["¿Qué es el consumo responsable?", "Dame consejos para comprar de manera más responsable.", "¿Cómo puedo reducir mi huella de carbono a través del consumo?", "Consejos para evitar el consumismo.", "¿Qué impacto tiene el fast fashion en el medio ambiente?"],
+            "responses": ["El consumo responsable implica tomar decisiones de compra conscientes, eligiendo productos duraderos, de calidad y respetuosos con el medio ambiente.", 
+            "Para comprar de manera más responsable, investiga la procedencia y las prácticas de producción de los productos, opta por productos con envases reciclables o reutilizables, y considera la posibilidad de comprar productos usados.", 
+            "Para reducir tu huella de carbono a través del consumo, elige productos locales, compra alimentos de temporada, evita el desperdicio de alimentos y considera la opción de usar energías renovables en tu hogar.", 
+            "Para evitar el consumismo, antes de comprar, pregúntate si realmente necesitas el producto y si es sostenible, opta por reparar o reutilizar artículos en lugar de desecharlos, y evita comprar por impulso.", 
+            "El fast fashion tiene un impacto significativo en el medio ambiente debido a la producción masiva y rápida de prendas, que conlleva altos niveles de consumo de agua, energía y generación de residuos textiles."]
+        },
+        {
+            "tag": "bienestar-emocional",
+            "patterns": ["¿Cómo puedo mejorar mi bienestar emocional?", "Dame consejos para manejar el estrés.", "¿Qué prácticas promueven la salud mental?", "Consejos para cultivar la resiliencia.", "¿Por qué es importante practicar la autocompasión?"],
+            "responses": ["Para mejorar el bienestar emocional, cultiva una vida equilibrada con tiempo para actividades que te gusten, habla con amigos y familiares de confianza y busca apoyo cuando lo necesites.", 
+            "Para manejar el estrés, considera practicar técnicas de relajación como la meditación o el yoga, haz ejercicio regularmente, y establece límites saludables en tu vida diaria.", 
+            "Prácticas que promueven la salud mental incluyen mantener una rutina regular, practicar la gratitud, buscar ayuda profesional si es necesario, y mantener conexiones sociales significativas.", 
+            "Para cultivar la resiliencia, aprende a ver los desafíos como oportunidades de crecimiento, mantén una actitud positiva frente a la adversidad, y busca apoyo en tus redes de apoyo.", 
+            "La autocompasión es importante porque te ayuda a tratarte a ti mismo con amabilidad y comprensión en momentos difíciles, fomentando la resiliencia y el bienestar emocional."]
+        },
+        {
+            "tag": "reciclaje",
+            "patterns": ["¿Por qué es importante reciclar?", "Dame consejos para reciclar correctamente.", "¿Qué materiales son reciclables?", "Consejos para fomentar el reciclaje en mi comunidad.", "¿Cómo puedo reducir mi generación de residuos?"],
+            "responses": ["Reciclar es importante porque ayuda a reducir la cantidad de desechos que terminan en vertederos, conserva recursos naturales y disminuye la contaminación.", 
+            "Para reciclar correctamente, separa los materiales reciclables en contenedores específicos, lava los envases antes de reciclarlos y consulta las pautas de reciclaje de tu localidad.", 
+            "Los materiales comúnmente reciclables incluyen papel, cartón, plástico, vidrio y metal. Sin embargo, los tipos de materiales reciclables pueden variar según el lugar donde vivas.", 
+            "Para fomentar el reciclaje en tu comunidad, educa a tus vecinos sobre la importancia del reciclaje, participa en programas de reciclaje locales y apoya iniciativas sostenibles en tu área.", 
+            "Para reducir la generación de residuos, opta por productos con menos envases, compra a granel para evitar envases innecesarios, y reutiliza productos y envases siempre que sea posible."]
+        },
+        {
+            "tag": "ejercicio-casa",
+            "patterns": ["¿Cómo mantenerse activo en casa?", "Dame consejos para hacer ejercicio en espacios reducidos.", "¿Qué ejercicios puedo hacer sin equipo?", "Consejos para establecer una rutina de ejercicio en casa.", "¿Cómo puedo combinar el trabajo en casa con la actividad física?"],
+            "responses": ["Para mantenerse activo en casa, puedes hacer ejercicios como yoga, pilates, ejercicios de peso corporal y baile. También puedes seguir rutinas de ejercicios en línea o a través de aplicaciones de fitness.", 
+            "En espacios reducidos, considera hacer ejercicios que no requieran mucho espacio, como saltos, estocadas, flexiones y ejercicios de abdominales.", 
+            "Puedes hacer ejercicios sin equipo, como sentadillas, flexiones, planchas y saltos. También puedes utilizar objetos cotidianos, como botellas de agua o sillas, para agregar resistencia a tus ejercicios.", 
+            "Para establecer una rutina de ejercicio en casa, elige horarios específicos para tus sesiones de ejercicios, crea un espacio dedicado para el ejercicio y busca motivación en objetivos personales.", 
+            "Para combinar el trabajo en casa con la actividad física, haz pequeñas pausas cada hora para estirarte o dar un paseo corto, utiliza una silla de ejercicio o una pelota para fortalecer tu postura, y considera hacer reuniones virtuales caminando o de pie."]
+        },
+        {
+            "tag": "planeta-futuro",
+            "patterns": ["¿Cómo podemos crear un futuro más sostenible?", "Dame consejos para educar a las futuras generaciones sobre sostenibilidad.", "¿Qué cambios se necesitan para proteger el planeta?", "Consejos para involucrarse en proyectos de conservación ambiental.", "¿Cómo puedo apoyar a organizaciones que trabajan por la sostenibilidad?"],
+            "responses": ["Podemos crear un futuro más sostenible adoptando prácticas y políticas que protejan el medio ambiente, invirtiendo en energías limpias y promoviendo la sostenibilidad en todas las áreas de la sociedad.", 
+            "Para educar a las futuras generaciones sobre sostenibilidad, enseña a los niños sobre el cuidado del medio ambiente, explícales la importancia del reciclaje y la conservación, y fomenta su conexión con la naturaleza.", 
+            "Para proteger el planeta, se necesitan cambios a nivel individual y colectivo, como reducir las emisiones de gases de efecto invernadero, preservar los espacios naturales y promover la biodiversidad.", 
+            "Para involucrarte en proyectos de conservación ambiental, busca organizaciones locales que trabajen en temas de sostenibilidad, participa en actividades de limpieza y restauración de ecosistemas, y apoya iniciativas de protección de la vida silvestre.", 
+            "Puedes apoyar a organizaciones que trabajan por la sostenibilidad mediante donaciones, voluntariado en sus programas y difundiendo su trabajo a través de redes sociales y eventos comunitarios."]
+        },
+        {
+            "tag": "alimentacion-saludable",
+            "patterns": ["¿Cuál es la importancia de una alimentación saludable?", "Dame consejos para mejorar mi dieta.", "¿Cómo puedo equilibrar mis comidas?", "Consejos para perder peso de forma saludable.", "¿Qué alimentos debo evitar para cuidar mi salud?"],
+            "responses": ["Una alimentación saludable es fundamental para proporcionar los nutrientes necesarios para el correcto funcionamiento del cuerpo, mantener un peso adecuado y prevenir enfermedades.", 
+            "Para mejorar tu dieta, incluye una variedad de alimentos frescos como frutas, verduras, granos enteros y proteínas magras. Evita el consumo excesivo de alimentos procesados y bebidas azucaradas.", 
+            "Para equilibrar tus comidas, asegúrate de incluir proteínas, carbohidratos, grasas saludables y fibras en cada comida. También es importante controlar las porciones y comer en horarios regulares.", 
+            "Si deseas perder peso de forma saludable, es recomendable reducir el consumo de calorías, aumentar la actividad física y elegir alimentos bajos en calorías pero ricos en nutrientes.", 
+            "Para cuidar tu salud, evita el consumo excesivo de alimentos ricos en grasas saturadas, azúcares refinados y sodio. Opta por alternativas más saludables como aceites vegetales, azúcar natural y sal en moderación."]
+        },
+        {
+            "tag": "nutrientes-esenciales",
+            "patterns": ["¿Qué son los nutrientes esenciales?", "Dame consejos para asegurar una ingesta adecuada de vitaminas y minerales.", "¿Cómo puedo obtener suficiente fibra en mi dieta?", "Consejos para llevar una dieta balanceada en una dieta vegana.", "¿Qué alimentos son ricos en antioxidantes?"],
+            "responses": ["Los nutrientes esenciales son sustancias que el cuerpo necesita para funcionar correctamente, pero que no puede producir en cantidades suficientes, por lo que deben obtenerse a través de la dieta.", 
+            "Para asegurar una ingesta adecuada de vitaminas y minerales, incluye una variedad de alimentos en tu dieta, come frutas y verduras de diferentes colores y considera tomar suplementos si es necesario bajo la supervisión de un profesional de la salud.", 
+            "Para obtener suficiente fibra en tu dieta, consume alimentos ricos en fibra como frutas, verduras, legumbres, granos enteros y nueces. También es importante beber suficiente agua para ayudar a la digestión.", 
+            "Si llevas una dieta vegana, asegúrate de incluir fuentes de proteína vegetal como legumbres, tofu, tempeh y seitan. También incorpora fuentes de calcio, hierro y vitamina B12 en tu dieta.", 
+            "Los antioxidantes son compuestos que protegen al cuerpo del daño causado por los radicales libres. Puedes encontrar antioxidantes en alimentos como bayas, nueces, espinacas, tomates y té verde."]
+        },
+        {
+            "tag": "hidratacion",
+            "patterns": ["¿Por qué es importante mantenerse hidratado?", "Dame consejos para asegurar una adecuada hidratación.", "¿Cuánta agua debo beber al día?", "Consejos para mantenerse hidratado durante el ejercicio.", "¿Qué bebidas son las mejores opciones para mantenerse hidratado?"],
+            "responses": ["Mantenerse hidratado es esencial para el funcionamiento adecuado del cuerpo, mantener la temperatura corporal y transportar nutrientes y desechos a través del organismo.", 
+            "Para asegurar una adecuada hidratación, bebe agua regularmente a lo largo del día, incluso cuando no sientas sed. También puedes incluir alimentos ricos en agua como frutas y verduras.", 
+            "La cantidad de agua que debes beber al día puede variar según factores como el clima y la actividad física, pero una guía general es consumir al menos 8 vasos de agua al día.", 
+            "Durante el ejercicio, es importante beber suficiente agua antes, durante y después de la actividad física para reponer los líquidos perdidos por el sudor.", 
+            "Las mejores opciones para mantenerse hidratado son agua, agua con limón o pepino, té sin azúcar y bebidas deportivas en caso de actividades físicas intensas y prolongadas."]
+        },
+        {
+            "tag": "alimentacion-ninos",
+            "patterns": ["¿Cómo promover una alimentación saludable en los niños?", "Dame consejos para lidiar con niños quisquillosos para comer.", "¿Cuáles son los nutrientes más importantes para el crecimiento infantil?", "Consejos para preparar meriendas saludables para los niños.", "¿Qué bebidas son las más adecuadas para los niños?"],
+            "responses": ["Para promover una alimentación saludable en los niños, ofrece una variedad de alimentos frescos y coloridos, involúcralos en la preparación de comidas y crea un ambiente positivo en torno a la comida.", 
+            "Lidiar con niños quisquillosos para comer puede ser desafiante, pero es importante ser paciente y ofrecer opciones saludables en el plato. Evita obligarlos a comer y respeta sus preferencias en la medida de lo posible.", 
+            "Los nutrientes más importantes para el crecimiento infantil incluyen proteínas, calcio, hierro, vitaminas A y C, y ácidos grasos omega-3. Puedes encontrar estos nutrientes en alimentos como leche, yogur, carne magra, frutas y verduras.", 
+            "Para preparar meriendas saludables para los niños, opta por opciones como frutas frescas, palitos de zanahoria con hummus, yogur con granola o galletas integrales con queso.", 
+            "Las bebidas más adecuadas para los niños son agua y leche. Evita ofrecer bebidas azucaradas como refrescos y jugos comerciales con alto contenido de azúcar."]
+        },
+        {
+            "tag": "comer-fuera",
+            "patterns": ["¿Cómo puedo mantener una dieta saludable al comer fuera de casa?", "Dame consejos para tomar decisiones saludables en restaurantes.", "¿Qué debo evitar al elegir opciones de menú?", "Consejos para no excederse en las porciones cuando como fuera.", "¿Cómo puedo adaptar mi dieta a diferentes tipos de restaurantes?"],
+            "responses": ["Para mantener una dieta saludable al comer fuera de casa, busca restaurantes que ofrezcan opciones saludables y equilibradas en su menú, y considera revisar el menú en línea con anticipación para tomar decisiones más informadas.", 
+            "Al elegir opciones de menú en restaurantes, opta por platos que incluyan una variedad de verduras, proteínas magras y granos enteros. Evita platos fritos o con exceso de grasas y azúcares.", 
+            "Evita elegir opciones de menú que contengan ingredientes poco saludables como salsas con alto contenido de grasa y azúcares, y platos con exceso de sal.", 
+            "Para no excederse en las porciones, considera compartir platos con otras personas o pide una porción más pequeña. También puedes pedir que te empaquen la mitad de la comida para llevar a casa.", 
+            "Cuando comas en diferentes tipos de restaurantes, adapta tu dieta eligiendo opciones más saludables. Por ejemplo, en un restaurante de comida rápida, elige opciones con menos grasas y calorías, y en un restaurante italiano, opta por platos con más verduras y menos salsas cremosas."]
+        },
+        {
+            "tag": "ejercicio-regular",
+            "patterns": ["¿Cuánto ejercicio debo hacer?", "Dame consejos para mantener una rutina de ejercicio regular.", "¿Cuáles son los beneficios del ejercicio cardiovascular?", "Consejos para evitar lesiones durante el ejercicio.", "¿Qué ejercicios son ideales para fortalecer el núcleo del cuerpo?"],
+            "responses": ["La cantidad de ejercicio que necesitas depende de tus objetivos y nivel de condición física. La Organización Mundial de la Salud recomienda al menos 150 minutos de ejercicio aeróbico moderado o 75 minutos de ejercicio aeróbico vigoroso por semana, combinado con actividades de fortalecimiento muscular dos días a la semana.", 
+            "Para mantener una rutina de ejercicio regular, elige actividades que disfrutes, establece metas realistas, programa tus sesiones de ejercicio en tu calendario y busca la compañía de un amigo o entrenador para mantener la motivación.", 
+            "El ejercicio cardiovascular, como correr, nadar y andar en bicicleta, mejora la salud del corazón, aumenta la resistencia, quema calorías y ayuda a reducir el riesgo de enfermedades crónicas como la diabetes y la hipertensión.", 
+            "Para evitar lesiones durante el ejercicio, calienta adecuadamente antes de comenzar, utiliza la técnica adecuada en cada ejercicio, escucha a tu cuerpo y descansa cuando sea necesario, y asegúrate de usar equipo de protección si es necesario.", 
+            "Los ejercicios ideales para fortalecer el núcleo del cuerpo incluyen planchas, abdominales, ejercicios de pilates y yoga, y levantamiento de pesas con enfoque en los músculos abdominales."]
+        },
+        {
+            "tag": "salud-mental",
+            "patterns": ["¿Qué es la salud mental?", "Dame consejos para mantener una buena salud mental.", "¿Cómo puedo manejar el estrés y la ansiedad?", "Consejos para mejorar la autoestima.", "¿Qué actividades pueden promover el bienestar emocional?"],
+            "responses": ["La salud mental se refiere al estado emocional, psicológico y social de una persona. Incluye la manera en que pensamos, sentimos y actuamos en respuesta a las situaciones de la vida.", 
+            "Para mantener una buena salud mental, cuida tu cuerpo y mente a través de una alimentación saludable, ejercicio regular, sueño adecuado y técnicas de relajación como la meditación y el yoga.", 
+            "Para manejar el estrés y la ansiedad, identifica las causas de tu malestar, establece límites y prioridades, habla con alguien de confianza, y practica técnicas de respiración profunda y mindfulness.", 
+            "Para mejorar la autoestima, enfócate en tus cualidades y logros positivos, establece metas realistas, rodeate de personas que te apoyen, y evita compararte con los demás.", 
+            "Actividades que pueden promover el bienestar emocional incluyen practicar hobbies y pasatiempos que te gusten, pasar tiempo en la naturaleza, expresar tus emociones a través del arte o la escritura, y conectarte con amigos y familiares."]
+        },
+        {
+            "tag": "medicina-alternativa",
+            "patterns": ["¿Qué es la medicina alternativa?", "Dame consejos sobre terapias naturales para mejorar la salud.", "¿Qué es la acupuntura y para qué se utiliza?", "Consejos para integrar la medicina alternativa con la medicina tradicional.", "¿Cuáles son los riesgos asociados con el uso de medicina alternativa?"],
+            "responses": ["La medicina alternativa se refiere a prácticas y terapias que se utilizan en lugar o junto con la medicina tradicional. Incluye enfoques como la acupuntura, homeopatía, medicina herbal y terapias de masaje.", 
+            "Para mejorar la salud con terapias naturales, es importante consultar con un profesional de la salud capacitado en medicina alternativa. Algunas terapias populares incluyen el uso de plantas medicinales, suplementos naturales y prácticas de relajación como el yoga.", 
+            "La acupuntura es una terapia tradicional china que implica la inserción de agujas delgadas en puntos específicos del cuerpo para estimular la energía y promover el equilibrio. Se utiliza para tratar diversas afecciones como el dolor, el estrés y problemas de salud específicos.", 
+            "Si estás considerando integrar la medicina alternativa con la medicina tradicional, es importante comunicar a tus profesionales de la salud sobre los tratamientos que estás utilizando y buscar su aprobación. La colaboración entre ambas prácticas puede brindar beneficios complementarios.", 
+            "El uso de medicina alternativa puede tener riesgos, como interacciones con medicamentos convencionales, falta de regulación en algunos suplementos y terapias, y resultados inconsistentes. Es importante consultar con un profesional de la salud antes de utilizar cualquier tratamiento alternativo."]
+        },
+        {
+            "tag": "vida-sostenible-hogar",
+            "patterns": ["¿Cómo puedo llevar una vida más sostenible en mi hogar?", "Dame consejos para reducir el consumo de energía en casa.", "¿Cómo puedo implementar el reciclaje en mi hogar?", "Consejos para reducir el uso de productos plásticos en casa.", "¿Qué es la huella de carbono y cómo puedo disminuirla?"],
+            "responses": ["Para llevar una vida más sostenible en tu hogar, puedes comenzar por reducir el consumo de energía apagando luces y electrodomésticos cuando no los estés utilizando, ajustando la temperatura del termostato y utilizando bombillas de bajo consumo energético.", 
+            "Para reducir el consumo de energía, considera invertir en electrodomésticos y dispositivos electrónicos con calificación energética alta, utiliza cortinas y persianas para mantener la temperatura en tu hogar y apaga los cargadores y dispositivos electrónicos que no estén en uso.", 
+            "Para implementar el reciclaje en tu hogar, asegúrate de tener contenedores adecuados para separar los materiales reciclables, como papel, cartón, vidrio y plástico. Investiga las pautas de reciclaje de tu localidad para asegurarte de reciclar correctamente.", 
+            "Para reducir el uso de productos plásticos en casa, opta por alternativas sostenibles, como botellas de agua reutilizables, bolsas de tela para las compras y recipientes de vidrio en lugar de plástico para almacenar alimentos.", 
+            "La huella de carbono es la cantidad de gases de efecto invernadero liberados a la atmósfera como resultado de nuestras actividades diarias. Puedes disminuir tu huella de carbono eligiendo opciones de transporte más sostenibles, reduciendo el consumo de carne y eligiendo productos locales y sostenibles."]
+        },
+        {
+            "tag": "bienestar-social",
+            "patterns": ["¿Qué es el bienestar social?", "Dame consejos para mantener relaciones sociales saludables.", "¿Por qué es importante tener una red de apoyo social?", "Consejos para manejar el aislamiento y la soledad.", "¿Cómo puedo contribuir al bienestar de mi comunidad?"],
+            "responses": ["El bienestar social se refiere a tener relaciones y conexiones saludables con otras personas. Implica sentirse conectado, apoyado y valorado dentro de una comunidad o red social.", 
+            "Para mantener relaciones sociales saludables, cultiva amistades basadas en el respeto mutuo y la confianza, escucha activamente a los demás, muestra empatía y comprensión, y ofrece tu ayuda y apoyo cuando sea necesario.", 
+            "Tener una red de apoyo social es importante porque proporciona un sistema de apoyo emocional y práctico en momentos de dificultad. Estar conectado con otros puede reducir el estrés y mejorar el bienestar general.", 
+            "Para manejar el aislamiento y la soledad, busca oportunidades para interactuar con otras personas, como unirte a grupos o clubes con intereses similares, participar en actividades comunitarias y mantener el contacto con amigos y familiares.", 
+            "Para contribuir al bienestar de tu comunidad, participa en actividades voluntarias, apoya a negocios locales, promueve prácticas sostenibles y fomenta un ambiente de inclusión y respeto para todos."]
+        },
+        {
+            "tag": "contaminacion-mundo",
+            "patterns": ["¿Qué es la contaminación y cómo afecta al mundo?", "Dame consejos para reducir mi huella ecológica.", "¿Cuáles son los principales contaminantes del aire, agua y suelo?", "Consejos para apoyar la conservación del medio ambiente.", "¿Cómo afecta la contaminación al cambio climático?"],
+            "responses": ["La contaminación es la presencia o introducción de sustancias dañinas en el medio ambiente que causan daño a los seres vivos y los ecosistemas. Puede incluir la contaminación del aire, agua y suelo, así como la contaminación por ruido y desechos.", 
+            "Para reducir tu huella ecológica, puedes adoptar prácticas sostenibles como reciclar y reutilizar materiales, ahorrar energía y agua, usar transporte público o bicicleta en lugar de automóvil, y optar por productos ecológicos y locales.", 
+            "Los principales contaminantes del aire incluyen dióxido de carbono (CO2), óxidos de nitrógeno (NOx), partículas finas y ozono. En el agua, los principales contaminantes son productos químicos, plásticos y nutrientes como el nitrógeno y el fósforo. En el suelo, los contaminantes pueden incluir pesticidas y metales pesados.", 
+            "Para apoyar la conservación del medio ambiente, participa en programas de limpieza y restauración de ecosistemas, apoya a organizaciones que trabajen en proyectos de conservación, y promueve prácticas sostenibles en tu comunidad y lugar de trabajo.", 
+            "La contaminación contribuye al cambio climático al aumentar la concentración de gases de efecto invernadero en la atmósfera, como el CO2 y el metano. Estos gases atrapan el calor del sol en la Tierra, lo que causa el calentamiento global y provoca cambios climáticos, como el aumento del nivel del mar y eventos climáticos extremos."]
+        },
+        {
+            "tag": "contaminacion-empresas-textiles",
+            "patterns": ["¿Cómo afecta la industria textil al medio ambiente?", "Dame consejos para apoyar la moda sostenible.", "¿Cuáles son los principales problemas ambientales causados por la fabricación de prendas de vestir?", "Consejos para reducir el impacto de la moda rápida en el medio ambiente.", "¿Qué alternativas sostenibles existen en la industria textil?"],
+            "responses": ["La industria textil afecta al medio ambiente en varios aspectos. La producción de prendas de vestir consume grandes cantidades de agua, energía y recursos naturales. Además, la fabricación y el teñido de textiles pueden liberar productos químicos tóxicos y contaminantes al agua y suelo.", 
+            "Para apoyar la moda sostenible, opta por marcas y diseñadores que utilicen materiales ecológicos y prácticas de producción sostenibles. También puedes comprar prendas de segunda mano, intercambiar ropa con amigos o alquilar ropa para ocasiones especiales.", 
+            "Los principales problemas ambientales causados por la fabricación de prendas de vestir incluyen el uso intensivo de agua, la contaminación del agua con productos químicos tóxicos, la generación de residuos textiles y la emisión de gases de efecto invernadero durante el proceso de producción.", 
+            "Para reducir el impacto de la moda rápida en el medio ambiente, evita comprar prendas de baja calidad que se desechen rápidamente. En su lugar, elige prendas de mayor calidad que duren más tiempo, y recicla o dona la ropa que ya no necesites.", 
+            "Existen varias alternativas sostenibles en la industria textil, como el uso de materiales orgánicos y reciclados, la adopción de procesos de fabricación más eficientes y menos contaminantes, y la promoción de una moda circular que fomente el reciclaje y la reutilización de prendas."]
+        },
+        {
+            "tag": "plasticos",
+            "patterns": ["¿Cuál es el problema con los plásticos?", "Dame consejos para reducir el consumo de plástico.", "¿Cuáles son los efectos de los plásticos en los océanos y la vida marina?", "Consejos para reciclar y gestionar adecuadamente los plásticos.", "¿Qué alternativas sostenibles existen para reducir el uso de plásticos?"
+            ],
+            "responses": ["El problema con los plásticos radica en su durabilidad y su lenta degradación en la naturaleza. Muchos productos de plástico terminan en vertederos o en el medio ambiente, donde pueden tardar cientos de años en descomponerse, causando contaminación y daño a la vida silvestre.", 
+            "Para reducir el consumo de plástico, utiliza bolsas de tela o papel reutilizables en lugar de bolsas de plástico, lleva tu propia botella de agua rellenable en lugar de comprar botellas desechables, y evita productos de plástico de un solo uso como cubiertos y pajitas.", 
+            "Los plásticos en los océanos pueden dañar a la vida marina de diversas formas. Los animales pueden confundir los desechos de plástico con alimentos y ingerirlos, lo que causa daños internos o incluso la muerte. Además, los plásticos pueden atrapar y ahogar a los animales marinos.", 
+            "Para reciclar y gestionar adecuadamente los plásticos, separa los envases de plástico del resto de los residuos en casa y deposítalos en contenedores de reciclaje. Infórmate sobre los programas de reciclaje en tu comunidad y asegúrate de seguir las pautas adecuadas.", 
+            "Existen varias alternativas sostenibles para reducir el uso de plásticos, como el uso de envases biodegradables y compostables, el empleo de materiales como vidrio y acero inoxidable en lugar de plástico, y la promoción de prácticas de reutilización y reciclaje."]
+        },
+        {
+            "tag": "productos-alimentos-nocivos",
+            "patterns": ["¿Qué son los productos y alimentos nocivos?", "Dame consejos para identificar y evitar productos tóxicos en casa.", "¿Cuáles son los ingredientes dañinos en productos de cuidado personal?", "Consejos para elegir alimentos saludables y evitar alimentos procesados.", "¿Qué etiquetas buscar en los alimentos para asegurar su calidad?"
+            ],
+            "responses": ["Los productos y alimentos nocivos son aquellos que contienen sustancias químicas tóxicas o ingredientes perjudiciales para la salud. Pueden incluir productos de cuidado personal con parabenos y ftalatos, y alimentos procesados con alto contenido de grasas saturadas, azúcares y aditivos artificiales.", 
+            "Para identificar y evitar productos tóxicos en casa, lee las etiquetas de los productos de cuidado personal y busca aquellos que sean libres de parabenos, ftalatos y sulfatos. Opta por productos naturales y ecológicos siempre que sea posible.", 
+            "Algunos ingredientes dañinos en productos de cuidado personal incluyen parabenos, que pueden interferir con las hormonas del cuerpo, y ftalatos, que se asocian con problemas reproductivos. También es importante evitar productos que contengan fragancias artificiales y colorantes sintéticos.", 
+            "Para elegir alimentos saludables, opta por alimentos frescos y naturales, como frutas, verduras, granos enteros y proteínas magras. Evita alimentos procesados con alto contenido de azúcares, grasas saturadas y aditivos artificiales.", 
+            "Al buscar alimentos de calidad, busca etiquetas como 'orgánico', 'libre de transgénicos', 'sin conservantes ni colorantes artificiales' y 'libre de antibióticos y hormonas'. Estas etiquetas indican que los alimentos han sido producidos siguiendo prácticas más saludables y sostenibles."]
+        },
+        {
+            "tag": "comida-chatarra",
+            "patterns": ["¿Qué es la comida chatarra y por qué es mala?", "Dame consejos para reducir el consumo de comida chatarra.", "¿Cuáles son los riesgos para la salud asociados con el consumo excesivo de comida chatarra?", "Consejos para mantener una dieta equilibrada y saludable.", "¿Qué alternativas saludables existen a la comida chatarra?"
+            ],
+            "responses": ["La comida chatarra es aquella que es alta en calorías, grasas saturadas, azúcares y sodio, y baja en nutrientes esenciales. Es mala para la salud porque su consumo regular puede conducir al aumento de peso, problemas cardíacos, diabetes tipo 2 y otras enfermedades crónicas.", 
+            "Para reducir el consumo de comida chatarra, evita comprar alimentos poco saludables en el supermercado y en su lugar, elige opciones más saludables como frutas frescas, frutos secos, yogur natural y palomitas de maíz sin mantequilla. También es útil planificar tus comidas y snacks con anticipación.", 
+            "El consumo excesivo de comida chatarra está asociado con un mayor riesgo de obesidad, presión arterial alta, niveles elevados de colesterol y problemas de salud a largo plazo. También puede afectar negativamente el estado de ánimo y la energía.", 
+            "Para mantener una dieta equilibrada y saludable, incluye una variedad de alimentos en tus comidas, como frutas y verduras, proteínas magras, granos enteros y grasas saludables. Limita el consumo de alimentos procesados y presta atención a las porciones.", 
+            "Existen varias alternativas saludables a la comida chatarra, como las chips de verduras horneadas en lugar de papas fritas, los bocadillos de frutas secas o frescas en lugar de caramelos, y los batidos de frutas y verduras en lugar de refrescos azucarados."]
+        }
+        
+    ]
+}

@@ -8,7 +8,7 @@ async function all() {
     const cardContainer = document.getElementById("card-container");
 
     datos.forEach((element, index) => {
-        const { imagen, nombre, descripcion, categoria } = element;
+        const { _id, imagen, nombre, descripcion, categoria, precio } = element;
         const card = document.createElement("div");
         card.classList.add("card", "mb-4", "product-wap", "rounded-0", "small-card");
         card.innerHTML = `
@@ -43,8 +43,12 @@ async function all() {
                 </li>
             </ul>
             <p class="text-center mb-0">categoria: ${categoria}</p>
+            <p class="text-center mb-0 precio">precio: ${precio}</p>
+      <a href="#" class="button comprar-producto" data-id="${_id}">Comprar</a>
         `;
 
         cardContainer.appendChild(card);
     });
 }
+
+
