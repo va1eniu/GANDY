@@ -1,0 +1,152 @@
+
+.button{
+    background:#86df1a;
+    text-decoration: none;
+    padding: 15px;
+    margin-top: 15px;
+   
+    color:  #f2f2f2;
+    font-weight: 700;
+}
+.button:hover{
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #194f00;
+    color: #f2f2f2;
+}
+
+
+
+
+
+/*contacto*/
+.container-contacto{
+    background-image: url("../../assets/css/img/backG.jpg");
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin:0;
+    padding: 6rem 0;
+}
+.container-contacto form{
+   
+    width: 900px;
+    margin:auto;
+    background:rgba(33, 99, 13, 0.938);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}  
+.container-contacto form h2{
+    color: #f2f2f2;
+    text-align: center;
+    margin:0;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.container-contacto form input,textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border:none;
+}
+
+.container-contacto input{
+   border-radius: 0.3rem;
+}
+.container-contacto form textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+
+
+
+@media (max-width: 800px) {
+
+    /*menu*/
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+    }
+    .navigation{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .navigation ul{
+        display: none;
+    }
+    .navigation ul.show{
+        display: block;
+    }
+    .navigation ul li{
+        display: block;
+    }
+    .navigation ul li a{
+        display: block;
+        padding: 0.5rem 0;
+    }
+    .navigation ul li a:hover{
+        color: #f2f2f2;
+    }
+
+    header{
+        height: auto;
+    }
+
+    /*menu-carrito*/
+    .dropdown-menu{
+        left: 0;
+        height: 250px;
+    }
+
+
+    /*slider*/
+    .slider{
+        padding-top: 5rem;
+    }
+
+
+    /*circulo imagenes*/
+    .container-imagen{
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    /*contacto*/
+    .container-contacto form{
+        width: 100%;
+    }
+
+
+    /*columnas*/
+    .columna1{
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    .columna2{
+        width: 100%;
+        float: none;
+        text-align: center;   
+    }
+    .columna2 img{
+        width: 300px;
+    }
+
+    /*carrito*/
+    .container-carrito form{
+        width:100%;
+    }
+    .tabla td, .tabla th {
+        padding: .1rem;
+    }    
+
+}

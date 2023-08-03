@@ -1,4 +1,4 @@
-import { getProductos } from "../FRONEND/pages/productos/API.js";
+import { getProductos } from "../productos/API.js";
 
 
 // Suponiendo que ya has agrupado tu código utilizando una herramienta como Webpack para soportar módulos ES.

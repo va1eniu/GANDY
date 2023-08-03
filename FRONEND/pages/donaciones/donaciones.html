@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="apple-touch-icon" href="../../gandyExpresions/feliz.png">
-    <link rel="shortcut icon" type="image/x-icon" href="../../gandyExpresions/feliz.png">
-<link rel="stylesheet" href="../../index.css">
+    <link rel="apple-touch-icon" href="../../assets/css/gandyExpresions/feliz.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/css/gandyExpresions/feliz.png">
+<link rel="stylesheet" href="../../assets/css/index.css">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/templatemo.css">
     <link rel="stylesheet" href="../assets/css/custom.css">
@@ -21,13 +21,7 @@
 
     <!-- Load map styles -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
-<!--
-    
-TemplateMo 559 Zay Shop
 
-https://templatemo.com/tm-559-zay-shop
-
--->
 </head>
 
 <body>
@@ -37,8 +31,8 @@ https://templatemo.com/tm-559-zay-shop
     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
-            <img src="../../gandyExpresions/normal.png" height="60" width="70" alt="">
-            <a class="navbar-brand text-success logo h1 align-self-center" href="../pages/home.html ">
+            <img src="../../assets/css/gandyExpresions/normal.png" height="60" width="70" alt="">
+            <a class="navbar-brand text-success logo h1 align-self-center" href="../home.html">
                 Gandy 
             </a>
 
@@ -50,17 +44,17 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="microempresas.html">microempresas</a>
+                            <a class="nav-link" href="../microempresas/microempresas.html">microempresas</a>
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link" href="productos.html">productos</a>
+                            <a class="nav-link" href="../CARRITO/productos.html">productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="donaciones.html">Donaciones</a>
+                            <a class="nav-link" href="../donaciones/donaciones.html">Donaciones</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">nosotros</a>
+                            <a class="nav-link" href="../about/contacto.html">nosotros</a>
                         </li>
                     </ul>
                 </div>
@@ -169,48 +163,8 @@ https://templatemo.com/tm-559-zay-shop
     
     
     <!-- Modal -->
-    <div class="modal fade" id="staticBackdropEDIT" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title fs-5" id="staticBackdropLabel">EDITAR</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form id="formularioEdit" class="form-select-lg mb-3" method="POST">
-                 
-                <div class="mb-3">
-                  <label for="CategoriaNombre2" class="col-form-label">editar nombre:</label>
-                  <input type="text" class="form-control formTam" id="nombre2" />
-                </div>
-
-                <div class="mb-3">
-                    <label for="CategoriaNombre2" class="col-form-label">editar fundacion:</label>
-                    <input type="text" class="form-control formTam" id="nombre3" />
-                  </div>
-
-                  <div class="mb-3">
-                    <label for="CategoriaNombre2" class="col-form-label">cantidad:</label>
-                    <input type="text" class="form-control formTam" id="nombre4" />
-                  </div>
+    
       
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary btn-lg"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="submit" class="btn btn-primary btn-lg">Guardar</button>
-            </div>
-          </form>
-            </div>
-            
-          </div>
-        </div>
-      </div> 
       
         
     
@@ -223,12 +177,73 @@ https://templatemo.com/tm-559-zay-shop
               <th>Fundacion</th>
               <th>Cantidad</th>
               <th>delete</th>
-              <th>editar</th>
+              <style>
+               
+                .primary-button {
+
+ 
+ color: white;
+ cursor: pointer;
+ letter-spacing: 0.09rem;
+ padding: 0.8rem 2.1rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 531.28 200'%3E%3Cdefs%3E%3Cstyle%3E .shape %7B fill: %23FF4655 /* fill: %230E1822; */ %7D %3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cpolygon class='shape' points='415.81 200 0 200 115.47 0 531.28 0 415.81 200' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+ background-color: #37961c;
+ background-size: 200%;
+ background-position: 200%;
+ background-repeat: no-repeat;
+ transition: 0.3s ease-in-out;
+ transition-property: background-position, border, color;
+ position: relative;
+ z-index: 1;
+}
+
+.primary-button:hover {
+ border: 1px solid #bb212e;
+ color: white;
+ background-position: 40%;
+}
+
+.primary-button:before {
+ content: "";
+ position: absolute;
+ background-color: #0E1822;
+ width: 0.2rem;
+ height: 0.2rem;
+ top: -1px;
+ left: -1px;
+ transition: background-color 0.15s ease-in-out;
+}
+
+.primary-button:hover:before {
+ background-color: white;
+}
+
+.primary-button:hover:after {
+ background-color: white;
+}
+
+.primary-button:after {
+ content: "";
+ position: absolute;
+ background-color: #FF4655;
+ width: 0.3rem;
+ height: 0.3rem;
+ bottom: -1px;
+ right: -1px;
+ transition: background-color 0.15s ease-in-out;
+}
+
+
+              </style>
+
+              
           </tr>
       </thead>
       <tbody id="insert">
       </tbody>
   </table>
+
+
 
   <style>
    

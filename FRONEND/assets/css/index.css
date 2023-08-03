@@ -13,12 +13,19 @@ h1{
     overflow: hidden;
   }
   
-  #tabla-categorias th,
-  #tabla-categorias td {
-    border: 1px solid #236000;
+  #tabla-categorias th{
+    border: 2px solid #ffffff;
     padding: 8px;
     text-align: left;
-    background-color: #3ea732;
+    background-color: #1a6d10;
+    color: #ffffff;
+    transition: all 0.3s ease;
+  }
+  #tabla-categorias td {
+    border: 2px solid #ffffff;
+    padding: 8px;
+    text-align: left;
+    background-color: #5fac56;
     color: #ffffff;
     transition: all 0.3s ease;
   }

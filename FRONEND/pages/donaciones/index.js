@@ -32,12 +32,13 @@ async function iniciar() {
                 <td>${nombre}</td>
                 <td>${fundacion}</td>
                 <td>${cantidad}</td>
-                <td>
-                    <button class="btn btn-danger delete" id="${_id}">ELIMINAR</button>
-                </td>
-                <td>
-                    <button class="btn btn-warning editar" data-bs-toggle="modal" data-bs-target="#staticBackdropEDIT" id="${_id}">EDITAR</button>
-                </td>
+                
+               
+                <th><div class="button-borders">
+                <button class="primary-button delete" id="${_id}"> delete
+                </button>
+              </div></th>
+              <style>
             `;
             tablas.appendChild(fila);
         });

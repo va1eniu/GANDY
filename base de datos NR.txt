@@ -1,0 +1,39 @@
++---------------------+
+|     Donaciones      |
++---------------------+
+| _id                 |
+| nombre              |
+| fundacion           |
+| cantidad            |
++---------------------+
+
++---------------------+
+|   Microempresas     |
++---------------------+
+| _id                 |
+| nombre              |
+| categoria           |
+| descripcion         |
+| imagen              |
++---------------------+
+
++---------------------+
+|     Productos       |
++---------------------+
+| _id                 |
+| nombre              |
+| categoria           |
+| descripcion         |
+| imagen              |
+| precio              |
++---------------------+
+
++---------------------+
+|      Usuarios       |
++---------------------+
+| _id                 |
+| nombre              |
+| email               |
+| password            |
+| estado              |      
++---------------------+
