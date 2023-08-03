@@ -28,7 +28,7 @@ async function iniciar() {
     if (datos.length > 1) {
         const { nombre, categoria, descripcion, imagen } = datos[1];
         tablas2.innerHTML = `
-            <h1 class="h1 text-success"><b>${nombre}</b> <img src="${imagen} " alt=""height="100" width="100"  class="rounded-circle"></h1>
+            <h1 class="h1 text-success"><b>${nombre}</b> <img class="imagen-micro" src="${imagen} " alt=""height="100" width="100"  class="rounded-circle"></h1>
             <h2>categoria: ${categoria}</h2>
             <p>${descripcion}</p>
            
