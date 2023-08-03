@@ -6,6 +6,7 @@ async function all() {
     const datos = await getProductos();
     
     const cardContainer = document.getElementById("card-container");
+    cardContainer.innerHTML = ""; 
 
     datos.forEach((element, index) => {
         const { _id, imagen, nombre, descripcion, categoria, precio } = element;

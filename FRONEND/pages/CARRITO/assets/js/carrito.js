@@ -1,11 +1,9 @@
 class Carrito{
-    //Añadir el producto al carrito
     comprarProducto(e){
         e.preventDefault();
         if(e.target.classList.contains('agregar-carrito')){
             const producto = e.target.parentElement;
             this.leerDatosProducto(producto);
-            //console.log(producto);            
         }
     }
 
@@ -25,7 +23,6 @@ class Carrito{
             }
         });
         if(productosLS === infoProducto.id){
-            //console.log('El producto ya está agregado');
             Swal.fire({
                 icon: 'warning',
                 title: 'No tenemos stock suficiente, prueba con menos unidades',
@@ -35,7 +32,6 @@ class Carrito{
         }
         else{
             this.insertarCarrito(infoProducto);
-            //console.log(infoProducto);
             Swal.fire({
                 icon: 'success',
                 title: 'Agregado',
@@ -171,7 +167,6 @@ class Carrito{
     procesarPedido(e){
         e.preventDefault();
         if(this.obtenerProductosLocalStorage().length === 0){
-            //console.log('El carrito está vacío, agrega algún producto');
              Swal.fire({
                 icon: 'error',
                 title: 'El carrito está vacío, agrega un producto',
@@ -191,15 +186,14 @@ class Carrito{
             let element = Number(productoLS[i].precio * productoLS[i].cantidad);
             total = total + element;
         }
-        iva = parseFloat(total * 0.19).toFixed(2); // Calcular el IVA en pesos colombianos (19%).
+        iva = parseFloat(total * 0.19).toFixed(2);
         subtotal = parseFloat(total - iva).toFixed(2);
     
         document.getElementById('subtotal').innerHTML = "$" + this.formatCurrency(subtotal);
-        document.getElementById('iva').innerHTML = "$" + this.formatCurrency(iva); // Mostrar el IVA en pesos colombianos.
+        document.getElementById('iva').innerHTML = "$" + this.formatCurrency(iva); 
         document.getElementById('total').value = "$" + this.formatCurrency(total.toFixed(2));
     }
     
-    // Función auxiliar para formatear el valor numérico a una cadena con separadores de miles y dos decimales.
     formatCurrency(amount) {
         return new Intl.NumberFormat('es-CO', {
             style: 'currency',
@@ -207,14 +201,6 @@ class Carrito{
         }).format(amount);
     }
     
-
-// Función auxiliar para formatear el valor numérico a una cadena con separadores de miles y dos decimales.
-formatCurrency(amount) {
-    return new Intl.NumberFormat('es-CO', {
-        style: 'currency',
-        currency: 'COP'
-    }).format(amount);
-}
 
 
 }

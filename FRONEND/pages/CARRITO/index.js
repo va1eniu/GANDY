@@ -1,16 +1,11 @@
 import { getProductos } from "../productos/API.js";
 
-
-// Suponiendo que ya has agrupado tu código utilizando una herramienta como Webpack para soportar módulos ES.
-
-// Elimina la declaración de importación ya que no es necesaria aquí.
-
 document.addEventListener("DOMContentLoaded", all);
 
 async function all() {
   const datos = await getProductos();
-  const cardContainer = document.getElementById("lista-productos"); // Actualiza el ID al del contenedor correcto
-  cardContainer.innerHTML = ""; // Limpia el contenedor para evitar duplicados
+  const cardContainer = document.getElementById("lista-productos"); 
+  cardContainer.innerHTML = ""; 
 
   datos.forEach((element, index) => {
     const { _id, imagen, nombre, descripcion, categoria, precio } = element;

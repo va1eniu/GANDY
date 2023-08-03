@@ -1,5 +1,5 @@
 
-import {getCiclistas, postCiclistas, deleteCiclistas, getCiclistasOne, updCiclistasOne} from "./API.js";
+import {getCiclistas, postCiclistas, deleteCiclistas} from "./API.js";
 
 
 function calcularTotal(datos) {
@@ -18,7 +18,6 @@ function mostrarSumaTotal(datos) {
 
 document.addEventListener("DOMContentLoaded", iniciar);
 
-// GET Ciclistas
 async function iniciar() {
     try {
         const datos = await getCiclistas();
@@ -94,43 +93,4 @@ async function detectarID(e){
         }
     }
  
-    /// patch
-
-    if(e.target.classList.contains("editar")){
-        e.preventDefault();
-        const id_Ciclistas = e.target.getAttribute("id");
-        console.log(id_Ciclistas);
-        const datos = await getCiclistasOne(id_Ciclistas);
-        const nombre = document.querySelector("#nombre2");
-        const nombre2 = document.querySelector("#nombre3");
-        const nombre3 = document.querySelector("#nombre4");
-      
-        nombre.value = datos.nombre;
-      
-
-        const formularioEdit = document.querySelector("#formularioEdit");
-        formularioEdit.addEventListener("submit", updCiclistas);
-        function updCiclistas(e){
-            e.preventDefault();
-            const nombre = document.querySelector("#nombre2").value;
-            const nombre2 = document.querySelector("#nombre3").value;
-            const nombre3 = document.querySelector("#nombre4").value;
-         
-            
-            const datosUpd = {
-                nombre,
-                nombre2,
-                nombre3
-               
-            }
-
-            if(validate(datosUpd)){
-                updCiclistasOne(datosUpd, id_Ciclistas);
-            }
-        }
-    }
-}
-
-function validate(objeto){
-    return Object.values(objeto).every(element => element != "");
-}
+ }

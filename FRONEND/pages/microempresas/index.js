@@ -50,7 +50,7 @@ async function iniciar() {
         tablas3.innerHTML = `<p>No hay suficientes datos disponibles.</p>`;
     }
 
-/* tiendas */
+//microempresas
 
     const tienda1 = document.getElementById("tienda1");
     if (datos.length > 4) {
@@ -146,13 +146,9 @@ async function productos() {
         const datos = await getProductos();
         const cardContainer = document.getElementById("card-container");
 
-        // Limpia el contenido del contenedor antes de agregar las tarjetas
         cardContainer.innerHTML = '';
 
-        // Obtiene solo los primeros tres elementos de datos
-        const primerosTresElementos = datos.slice(0, 3);
-
-        primerosTresElementos.forEach((element, index) => {
+        datos.forEach((element, index) => {
             const { imagen, nombre, descripcion, categoria } = element;
             const card = document.createElement("div");
             card.classList.add("card", "mb-4", "product-wap", "rounded-0", "small-card");
@@ -161,13 +157,13 @@ async function productos() {
                     <img class="card-img " src="${imagen}" >
                     <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                         <ul class="list-unstyled">
-                            <li><a class="btn btn-success text-white" href="shop-single.html"><i class="far fa-heart"></i></a></li>
-                            <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="far fa-eye"></i></a></li>
-                            <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="fas fa-cart-plus"></i></a></li>
+                            <li><a class="btn btn-success text-white" href="../productos/shop-single.html"><i class="far fa-heart"></i></a></li>
+                            <li><a class="btn btn-success text-white mt-2" href="../productos/shop-single.html"><i class="far fa-eye"></i></a></li>
+                            <li><a class="btn btn-success text-white mt-2" href="../productos/shop-single.html"><i class="fas fa-cart-plus"></i></a></li>
                         </ul>
                     </div>
                 </div>
-                <a href="shop-single.html" class="h3 text-decoration-none">${nombre}</a>
+                <a href="../productos/shop-single.html" class="h3 text-decoration-none">${nombre}</a>
                 <p>${descripcion}</p>
                 <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
                     <li class="pt-2">

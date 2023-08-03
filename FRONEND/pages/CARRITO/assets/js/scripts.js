@@ -1,6 +1,5 @@
 jQuery('document').ready(function($){
 
-    //menu
     var menuBtn=$('.menu-icon'),
     menu=$('.navigation ul');
     
@@ -12,7 +11,7 @@ jQuery('document').ready(function($){
             }
         });
     
-    //carrito-menu
+    //el menu de el carrito
     var carritoMenuBtn=$('.car'),
     carritomenu=$('.dropdown-menu');
     
@@ -45,7 +44,7 @@ jQuery('document').ready(function($){
     });
     
     
-    //validar correo
+    //validacion correo
     function validarCorreo(correo){
         var expReg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
         var esValido = expReg.test(correo);
@@ -92,7 +91,7 @@ jQuery('document').ready(function($){
     }
     
     
-    //validar formulario-contacto
+    //form contacto
     function validar(){
         let nombre = document.getElementById("nombre").value;
         let correo = document.getElementById("correo").value;
