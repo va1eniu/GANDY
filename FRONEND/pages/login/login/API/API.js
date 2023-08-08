@@ -16,7 +16,7 @@ const postLogin = async (objeto) => {
         if (data.success) {
             alert(data.message);
             localStorage.removeItem('token');
-            window.location.href = "../../../home.html";
+            window.location.href = "../../../../../FRONEND/pages/home.html";
             localStorage.setItem('token', data.token);
             const datos = localStorage.getItem('token');
             console.log(datos);
