@@ -1,4 +1,3 @@
-
 import {getCiclistas, postCiclistas, deleteCiclistas} from "./API.js";
 
 
@@ -53,29 +52,31 @@ async function iniciar() {
 const formulario = document.querySelector("#formulario");
 formulario.addEventListener("submit", datosPOST);
 
-function datosPOST(e){
+function datosPOST(e) {
     e.preventDefault();
     const nombre = document.querySelector("#nombre").value;
     const fundacion = document.querySelector("#fundacion").value;
     const cantidad = document.querySelector("#cantidad").value;
 
-    console.log(nombre);
-
     const data = {
         nombre,
         fundacion,
         cantidad
-     
-    }
-    console.log(data);
+    };
 
-    if(validate(data)){
+    if (validate(data)) {
         postCiclistas(data);
         alert("Los datos se han ingresado satisfactoriamente");
-    }else {
-        alert("no pasa");
+    } else {
+        alert("Por favor, complete todos los campos.");
     }
 }
+
+function validate(data) {
+    // Check if nombre, fundacion, and cantidad are not empty
+    return data.nombre.trim() !== "" && data.fundacion.trim() !== "" && data.cantidad.trim() !== "";
+}
+
 
 
 

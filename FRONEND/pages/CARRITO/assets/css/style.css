@@ -1,3 +1,9 @@
+body{
+    font-family: 'Roboto', sans-serif;
+  font-size: 18px !important;
+  font-weight: 300 !important;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -34,6 +40,8 @@ img{
 
 /*menu*/
 header{
+    position: fixed;
+    z-index: 999999;
     background:#fcfcfc;
     color:#f2f2f2;
     padding: 1rem 0;
@@ -45,19 +53,26 @@ header{
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.271);
 }
 header a{
-    color: #369221;
+    
+    color: #6e6e6e;
     text-decoration: none;
 }
 .menu{
-    width: 95%;
-    max-width: 850px;
+    width: 100%;
+    max-width: 900px;
     margin: 0 auto;
 }
 .logo-nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    gap: 1rem;
+}
+.logo-nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
 }
 .logo{
     color: #408741;
@@ -68,8 +83,9 @@ header a{
     display: none;
 }
 .navigation ul{
+   
     margin:0;
-    padding: 0;
+    padding: 2rem;
     list-style: none;
 }
 .navigation ul li{
@@ -335,9 +351,15 @@ main{
 }
 
 
+
+.bi-cart3 {
+    color: rgb(37, 96, 16);
+    cursor: pointer;
+}
+
 /*productos-card*/
 .container-productos{
-    padding-top: 3rem;
+    padding-top: 1rem;
     width: 100%;
     max-width: 1200px;
     height: auto;
@@ -348,7 +370,7 @@ main{
 }
 .container-productos .card{
     width: 260px;
-    height: 390px;
+    height: 500px;
     background: #efeeee;
     color:#106823;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.322);

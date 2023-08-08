@@ -1,7 +1,3 @@
-""" 
-Este código es una implementación básica de un chatbot utilizando Flask, una biblioteca de Python para crear aplicaciones web. El chatbot es capaz de recibir mensajes de los usuarios a través de una interfaz web y proporcionar respuestas en función de los patrones de lenguaje aprendidos previamente. Está basado en un modelo de aprendizaje automático desarrollado con Keras y TensorFlow, entrenado con un conjunto de datos etiquetados almacenado en el archivo 'intents.json'. El bot utiliza técnicas de procesamiento de lenguaje natural (NLP) para entender el mensaje del usuario y predecir una categoría (intención) para la consulta. Luego, selecciona una respuesta aleatoria asociada a esa categoría y la devuelve al usuario. """
-
-
 from flask import Flask, render_template, request, jsonify
 import json
 import numpy as np

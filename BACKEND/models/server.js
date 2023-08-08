@@ -4,6 +4,8 @@ import conectarDB from "../database/config.js";
 import RouterMicro from "../routes/micro.routes.js";
 import RouterProduct from "../routes/product.routes.js";
 import RouterDona from "../routes/dona.routes.js";
+import routerAuth from "../routes/auth.routes.js";
+import routerUsua from "../routes/usuarios.router.js";
 
 
 class Server {
@@ -12,9 +14,16 @@ class Server {
     this.port = process.env.PORT;
     this.middlewares();
     this.connect();
-    this.microPath = "/micro"
-    this.produPath = "/productos"
-    this.donaPath = "/donaciones"
+    this.paths = {
+      microPath : "/micro",
+      produPath : "/productos",
+      donaPath : "/donaciones",
+      authPath : "/auth",
+      usuarios: "/usuarios"
+
+  }
+
+   
     this.routes();
 
  
@@ -28,9 +37,11 @@ class Server {
   }
 
   routes(){
-    this.app.use(this.microPath, RouterMicro)
-    this.app.use(this.produPath, RouterProduct)
-    this.app.use(this.donaPath, RouterDona)
+    this.app.use(this.paths.microPath, RouterMicro)
+    this.app.use(this.paths.produPath, RouterProduct)
+    this.app.use(this.paths.donaPath, RouterDona)
+    this.app.use(this.paths.authPath, routerAuth)
+    this.app.use(this.paths.usuarios, routerUsua)
   }
  
   listen() {
