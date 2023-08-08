@@ -54,4 +54,7 @@ const obtenerAcciones = async (req, res) => {
     actualizarAcciones,
     oneAccion,
   };
+
+
+
   
